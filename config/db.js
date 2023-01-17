@@ -24,6 +24,7 @@ const Task = sequelize.define(
   { name: DataTypes.STRING },
   { timestamps: false }
 )
+//realtion between two models
 User.hasMany(Task)
 Task.belongsTo(User)
 
